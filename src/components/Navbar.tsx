@@ -15,7 +15,7 @@ export default function Navbar() {
     };
 
     // TODOS:
-    // 1. Bug Fixes
+    // 1. Bug is not Fixes yet
 
     return (
         <>
