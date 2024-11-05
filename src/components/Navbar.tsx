@@ -14,6 +14,9 @@ export default function Navbar() {
         setIsSidenavOpen(!isSidenavOpen);
     };
 
+    // TODOS:
+    // 1. Bug Fixes
+
     return (
         <>
             <nav className="sticky top-0 bg-white z-50">
