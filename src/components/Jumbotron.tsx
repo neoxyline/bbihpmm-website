@@ -20,16 +20,16 @@ export default function Jumbotron(){
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className="bg-gray-200 h-96 max-w-6xl rounded-sm"
+                className="h-96 max-w-6xl rounded-sm"
             >
-                <SwiperSlide className='bg-red-200'>
+                <SwiperSlide>
                     <img 
                         src={coding} 
                         alt='coding'
                         className='m-auto h-96 object-contain'
                     />
                 </SwiperSlide>
-                <SwiperSlide className='bg-red-200'>
+                <SwiperSlide>
                     <img 
                         src={coding2} 
                         alt='coding-2'
