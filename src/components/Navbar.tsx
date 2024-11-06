@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="sticky top-0 bg-red-500 z-50">
+            <nav className="sticky top-0 bg-white z-50">
                 <div className="flex flex-row gap-4 items-center px-4 py-4 mx-auto max-w-6xl">
                     <button 
                         onClick={toggleSidenav}
