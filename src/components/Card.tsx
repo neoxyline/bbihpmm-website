@@ -4,7 +4,7 @@ export default function Card() {
   return (
     <>
       <div className="">
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow bg-gray-100 border-gray-200">
+        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
           <a href="#">
             <img className="rounded-t-lg" src={FotoPengujian} alt="" />
           </a>
