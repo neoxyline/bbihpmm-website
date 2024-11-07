@@ -1,4 +1,5 @@
 import Footer from "../components/Footer"
+import Keunggulan from "../components/Keunggulan"
 import Navbar from "../components/Navbar"
 import News from "../components/News"
 
@@ -14,6 +15,7 @@ export default function WebpageLayout({ page }: WebpageLayout) {
                 {page}
             </div>
             <News />
+            <Keunggulan />
             <Footer />
         </>
     )
