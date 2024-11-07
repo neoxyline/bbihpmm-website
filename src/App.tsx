@@ -4,6 +4,7 @@ import RootPage from './app/index.tsx';
 import ProfilPage from './app/profil/index.tsx';
 import SejarahPage from './app/profil/sejarah/index.tsx';
 import VisiMisiPage from './app/profil/visi-misi/index.tsx';
+import MottoPage from './app/profil/motto/index.tsx';
 import UnhandledPath from './components/UnhandledPath.tsx';
 
 function App() {
@@ -20,19 +21,36 @@ function App() {
           path="/" 
           element={
             <WebpageLayout page={<RootPage />} />
-          } 
+          }
+        />
+        <Route
+          path="/profil"
+          element={
+            <WebpageLayout page={<ProfilPage />} />
+          }
         />
         <Route
           path="/profil/sejarah"
-          element={<WebpageLayout page={<SejarahPage />} />}
+          element={
+            <WebpageLayout page={<SejarahPage />} />
+          }
         />
         <Route
           path="/profil/visi-misi"
-          element={<WebpageLayout page={<VisiMisiPage />} />}
+          element={
+            <WebpageLayout page={<VisiMisiPage />} />
+          }
+        />
+        <Route
+          path="/profil/motto"
+          element={
+            <WebpageLayout page={<MottoPage />} />
+          }
         />
       </Routes>
-    </Router>
-  );
+
+    </Router >
+  )
 }
 
 export default App;
