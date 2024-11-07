@@ -5,11 +5,14 @@ import ProfilPage from './app/profil/index.tsx';
 import SejarahPage from './app/profil/sejarah/index.tsx';
 import VisiMisiPage from './app/profil/visi-misi/index.tsx';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import KebijakanMutuPage from './app/profil/kebijakan-mutu/index.tsx';
 =======
 import MottoPage from './app/profil/motto/index.tsx';
 import UnhandledPath from './components/UnhandledPath.tsx';
 >>>>>>> 6e8b9f551d73b7d3b7f7b30fa9586891f4166963
+=======
+>>>>>>> parent of 2613600 (staging)
 
 function App() {
   return (
@@ -50,12 +53,6 @@ function App() {
           element={
             <WebpageLayout page={<MottoPage />} />
           }
-        />
-        <Route 
-          path="/profil/kebijakan-mutu" 
-          element={
-            <WebpageLayout page={<KebijakanMutuPage />} />
-          } 
         />
       </Routes>
 
