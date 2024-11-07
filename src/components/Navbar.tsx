@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link, useNavigate } from "react-router-dom";
 
 import logoBBIHP from "../assets/images/logo@2x.png";
 import logoKemenperinRI from "../assets/images/kementrian-perindustrian-logo.png";
@@ -8,18 +9,52 @@ import Sidenav from "./Sidenav";
 
 export default function Navbar() {
 
+    const navigate = useNavigate();
+
     const [isSidenavOpen, setIsSidenavOpen] = useState(false);
 
     const toggleSidenav = () => {
         setIsSidenavOpen(!isSidenavOpen);
     };
 
-    // TODOS:
-    // 1. Bug is not Fixes yet
+    const pathProfil = [
+        {
+            path: '/profil',
+            name: 'Tentang BBIHPMM'
+        },
+        {
+            path: '/profil/sejarah',
+            name: 'Sejarah BBIHPMM'
+        },
+        {
+            path: '/profil/visi-misi',
+            name: 'Visi & Misi'
+        },
+        {
+            path: '/profil/tugas-fungsi',
+            name: 'Tugas Pokok & Fungsi'
+        },
+        {
+            path: '/profil/motto',
+            name: 'Motto BBIHPMM'
+        },
+        {
+            path: '/profil/struktur-organisasi',
+            name: 'Struktur Organisasi'
+        },
+        {
+            path: '/profil/profil-pejabat',
+            name: 'Profil Pejabat'
+        },
+        {
+            path: '/profil/kebijakan-mutu',
+            name: 'Kebijakan Mutu'
+        },
+    ]
 
     return (
         <>
-            <nav className="sticky top-0 bg-white z-50">
+            <nav className="sticky top-0 bg-white z-40">
                 <div className="flex flex-row gap-4 items-center px-4 py-4 mx-auto max-w-6xl">
                     <button
                         onClick={toggleSidenav}
@@ -28,47 +63,43 @@ export default function Navbar() {
                         <FontAwesomeIcon icon={faBars} />
                     </button>
                     <div className="flex flex-row gap-4 items-center">
-                        <img src={logoKemenperinRI} className="h-12 w-auto hidden md:block" alt="Kemenperin RI logo" />
-                        <img src={logoBBIHP} className="h-14 w-auto" alt="BBIHP logo" />
+                        <img 
+                            src={logoKemenperinRI} 
+                            className="h-12 w-auto hidden md:block cursor-pointer" 
+                            alt="Kemenperin RI logo" 
+                            onClick={() => navigate('/')}
+                        />
+                        <img 
+                            src={logoBBIHP} 
+                            className="h-14 w-auto cursor-pointer" 
+                            alt="BBIHP logo" 
+                            onClick={() => navigate('/')}
+                        />
                     </div>
                 </div>
                 <div className="border-y-[1px] shadow-sm hidden md:block md:px-28">
                     <ul className="flex flex-wrap justify-between items-center relative max-w-6xl m-auto">
+                        
                         <li className="group relative font-semibold cursor-pointer text-sm text-gray-900 p-4">
                             Profil
                             <ul
-                                className="group-hover:opacity-100 group-hover:translate-y-0 translate-y-full opacity-0 transition ease-in-out duration-200 absolute top-[52px] w-64 flex-col border-t-0 border-[1px] rounded-b-md bg-white shadow-md"
+                                className="hidden group-hover:block absolute top-[52px] w-64 flex-col border-t-0 border-[1px] rounded-b-md bg-white shadow-md"
                             >
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Tentang BBIHPMM
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Sejarah BBIHPMM
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Visi & Misi
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Tugas Pokok & Fungsi
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Motto BBIHPMM
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Struktur Organisasi
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Profil Pejabat
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Kebijakan Mutu
-                                </li>
+                                {pathProfil.map((item, index) => {
+                                    return (
+                                        <li key={index}>
+                                            <Link to={item.path} className="inline-block p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
+                                                {item.name}
+                                            </Link>
+                                        </li>
+                                    )
+                                })}
                             </ul>
                         </li>
                         <li className="group relative font-semibold cursor-pointer text-sm text-gray-900 p-4">
                             Informasi Publik
                             <ul
-                                className="group-hover:opacity-100 group-hover:translate-y-0 translate-y-full opacity-0 transition ease-in-out duration-200 absolute top-[52px] w-64 flex-col border-t-0 border-[1px] rounded-b-md bg-white shadow-md"
+                                className="hidden group-hover:block absolute top-[52px] w-64 flex-col border-t-0 border-[1px] rounded-b-md bg-white shadow-md"
                             >
                                 <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
                                     PPID
@@ -84,7 +115,7 @@ export default function Navbar() {
                         <li className="group relative font-semibold cursor-pointer text-sm text-gray-900 p-4">
                             Layanan Publik
                             <ul
-                                className="group-hover:opacity-100 group-hover:translate-y-0 translate-y-full opacity-0 transition ease-in-out duration-200 absolute top-[52px] w-64 flex-col border-t-0 border-[1px] rounded-b-md bg-white shadow-md"
+                                className="hidden group-hover:block absolute top-[52px] w-64 flex-col border-t-0 border-[1px] rounded-b-md bg-white shadow-md"
                             >
                                 <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
                                     Survey Indeks Kepuasan Rakyat
@@ -109,7 +140,7 @@ export default function Navbar() {
                         <li className="group relative font-semibold cursor-pointer text-sm text-gray-900 p-4">
                             Layanan Jasa
                             <ul
-                                className="group-hover:opacity-100 group-hover:translate-y-0 translate-y-full opacity-0 transition ease-in-out duration-200 absolute top-[52px] w-64 flex-col border-t-0 border-[1px] rounded-b-md bg-white shadow-md"
+                                className="hidden group-hover:block absolute top-[52px] w-64 flex-col border-t-0 border-[1px] rounded-b-md bg-white shadow-md"
                             >
                                 <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
                                     Industri Hijau
