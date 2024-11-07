@@ -6,19 +6,21 @@ import SejarahPage from './app/profil/sejarah/index.tsx';
 import VisiMisiPage from './app/profil/visi-misi/index.tsx';
 import MottoPage from './app/profil/motto/index.tsx';
 import UnhandledPath from './components/UnhandledPath.tsx';
+import StrukturOrganisasi from './app/profil/struktur-organisasi/index.tsx';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route 
-          path="*" 
+        <Route
+          path="*"
           element={
             <WebpageLayout page={<UnhandledPath />} />
-          } 
+          }
         />
-        <Route 
-          path="/" 
+
+        <Route
+          path="/"
           element={
             <WebpageLayout page={<RootPage />} />
           }
@@ -45,6 +47,12 @@ function App() {
           path="/profil/motto"
           element={
             <WebpageLayout page={<MottoPage />} />
+          }
+        />
+        <Route
+          path="/profil/struktur-organisasi"
+          element={
+            <WebpageLayout page={<StrukturOrganisasi />} />
           }
         />
       </Routes>
