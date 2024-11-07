@@ -49,6 +49,5 @@ export default function Section() {
                 </div>
             </div>
         </div>
-
     )
 }
