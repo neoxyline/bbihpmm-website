@@ -1,4 +1,4 @@
-import FotoPengujian from "../assets/img/pengujian.png";
+import FotoPengujian from "../assets/images/layanan/pengujian.png";
 
 export default function Card() {
   return (
