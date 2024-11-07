@@ -4,7 +4,7 @@ type WebpageLayout = {
     page: any
 }
 
-export default function WebpageLayout({ page }: WebpageLayout){
+export default function WebpageLayout({ page }: WebpageLayout) {
     return (
         <>
             <Navbar />
