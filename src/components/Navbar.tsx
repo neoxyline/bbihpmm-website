@@ -94,32 +94,6 @@ export default function Navbar() {
                                         </li>
                                     )
                                 })}
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Tentang BBIHPMM
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Sejarah BBIHPMM
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Visi & Misi
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Tugas Pokok & Fungsi
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Motto BBIHPMM
-                                </li>
-                                <a href="/profil/struktur-organisasi">
-                                    <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                        Struktur Organisasi
-                                    </li>
-                                </a>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Profil Pejabat
-                                </li>
-                                <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                    Kebijakan Mutu
-                                </li>
                             </ul>
                         </li>
                         <li className="group relative font-semibold cursor-pointer text-sm text-gray-900 p-4">
