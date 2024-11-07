@@ -64,10 +64,10 @@ export default function ProfilPage() {
             height="315"
             src="https://www.youtube.com/embed/YipntPU1FKo?si=9Co7e8CVgrNGVBxK"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           ></iframe>
         </div>
       </div>
