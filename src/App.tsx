@@ -23,10 +23,6 @@ function App() {
           path="/profil/visi-misi"
           element={<WebpageLayout page={<VisiMisiPage />} />}
         />
-        <Route
-          path="/profil/tentang-bbihpmm"
-          element={<WebpageLayout page={<TentangBBIHPMM />} />}
-        />
       </Routes>
     </Router>
   );
