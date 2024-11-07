@@ -4,6 +4,7 @@ import RootPage from './app/index.tsx';
 import ProfilPage from './app/profil/index.tsx';
 import SejarahPage from './app/profil/sejarah/index.tsx';
 import VisiMisiPage from './app/profil/visi-misi/index.tsx';
+import KebijakanMutuPage from './app/profil/kebijakan-mutu/index.tsx';
 
 function App() {
   return (
@@ -31,6 +32,12 @@ function App() {
           path="/profil/visi-misi" 
           element={
             <WebpageLayout page={<VisiMisiPage />} />
+          } 
+        />
+        <Route 
+          path="/profil/kebijakan-mutu" 
+          element={
+            <WebpageLayout page={<KebijakanMutuPage />} />
           } 
         />
       </Routes>
