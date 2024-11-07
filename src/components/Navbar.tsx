@@ -77,7 +77,7 @@ export default function Navbar() {
                         />
                     </div>
                 </div>
-                <div className="border-y-[1px] shadow-sm hidden md:block md:px-28">
+                <div className="border-y-[1px] shadow-sm hidden md:flex md:px-28 relative items-center">
                     <ul className="flex flex-wrap justify-between items-center relative max-w-6xl m-auto">
 
                         <li className="group relative font-semibold cursor-pointer text-sm text-gray-900 p-4">
@@ -223,6 +223,9 @@ export default function Navbar() {
                             Kontak BBIHPMM
                         </li>
                     </ul>
+                    <div className="absolute right-0 px-4">
+                        <a href="#" className="font-medium text-blue-600 hover:underline">Login</a>
+                    </div>
                 </div>
             </nav>
             <Sidenav isOpen={isSidenavOpen} onClose={() => setIsSidenavOpen(false)} />
