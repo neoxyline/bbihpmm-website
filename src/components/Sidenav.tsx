@@ -45,7 +45,7 @@ export default function Sidenav({ isOpen, onClose  }: SidenavProps) {
                         </button>
                         <ul id="dropdown-profil" className="hidden py-2">
                             <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Tentang BBIHPMM Makassar
+                                Tentang BBIHPMM                                                                                                                
                             </li>
                             <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
                                 Sejarah BBIHPMM
