@@ -1,4 +1,5 @@
-import Ceklis from "../../../components/ceklis";
+import Ceklis from "../../../components/Ceklis"
+
 
 export default function KebijakanMutuPage() {
     return (
