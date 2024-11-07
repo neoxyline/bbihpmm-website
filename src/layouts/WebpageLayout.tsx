@@ -1,4 +1,5 @@
 import Footer from "../components/Footer"
+import Keunggulan from "../components/Keunggulan"
 import Navbar from "../components/Navbar"
 
 type WebpageLayout = {
@@ -12,6 +13,7 @@ export default function WebpageLayout({ page }: WebpageLayout) {
             <div className="px-4 md:px-28">
                 {page}
             </div>
+            <Keunggulan />
             <Footer />
         </>
     )

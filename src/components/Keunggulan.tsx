@@ -1,4 +1,3 @@
-import React from 'react'
 import character from "../assets/character/character.svg"
 import innovation from "../assets/icon/inovation.png"
 import sarpras from "../assets/icon/sarpras.png"
