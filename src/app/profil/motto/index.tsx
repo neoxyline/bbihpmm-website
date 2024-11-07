@@ -4,7 +4,7 @@ export default function index() {
     return (
         <>
             <div className='py-8 text-center text-2xl font-bold uppercase'>
-                Motto
+                Motto Kami
             </div>
             <div className="flex justify-center items-center">
                 <a href="#"
