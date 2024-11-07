@@ -4,7 +4,7 @@ export default function index() {
    return (
       <>
          <h1 className="font-bold text-center text-xl my-10">STRUKTUR ORGANISASI BBIHPMM</h1>
-         <div className="w-full bg-slate-100 shadow-md rounded-xl my-10 overflow-x-scroll">
+         <div className="w-full bg-gray-50 border border-gray-200 shadow-md rounded-xl my-10 overflow-x-scroll">
             <div className="w-full p-8 mx-auto">
                <CardStrukturOrganisasi
                   isVisible={false}
