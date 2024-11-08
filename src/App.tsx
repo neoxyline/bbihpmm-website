@@ -57,6 +57,19 @@ function App() {
             <WebpageLayout page={<StrukturOrganisasi />} />
           }
         />
+        <Route
+          path="/profil/profil-pejabat"
+          element={
+            <WebpageLayout page={<PejabatPage />} />
+          }
+        />
+        <Route
+          path="/profil/kebijakan-mutu"
+          element={
+            <WebpageLayout page={<KebijakanMutuPage />} />
+          }
+        />
+
       </Routes>
 
     </Router >
