@@ -4,6 +4,7 @@ import { faChevronDown, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { initFlowbite } from "flowbite";
 
 import logoBBIHP from "../assets/images/logo@2x.png";
+import { Link } from "react-router-dom";
 
 type SidenavProps = {
     isOpen: boolean
@@ -15,6 +16,41 @@ export default function Sidenav({ isOpen, onClose  }: SidenavProps) {
     useEffect(() => {
         initFlowbite();
     });
+
+    const pathProfil = [
+        {
+            path: '/profil',
+            name: 'Tentang BBIHPMM'
+        },
+        {
+            path: '/profil/sejarah',
+            name: 'Sejarah BBIHPMM'
+        },
+        {
+            path: '/profil/visi-misi',
+            name: 'Visi & Misi'
+        },
+        {
+            path: '/profil/tugas-fungsi',
+            name: 'Tugas Pokok & Fungsi'
+        },
+        {
+            path: '/profil/motto',
+            name: 'Motto BBIHPMM'
+        },
+        {
+            path: '/profil/struktur-organisasi',
+            name: 'Struktur Organisasi'
+        },
+        {
+            path: '/profil/profil-pejabat',
+            name: 'Profil Pejabat'
+        },
+        {
+            path: '/profil/kebijakan-mutu',
+            name: 'Kebijakan Mutu'
+        },
+    ]
 
     return (
         <aside className="z-50">
@@ -44,30 +80,13 @@ export default function Sidenav({ isOpen, onClose  }: SidenavProps) {
                             <FontAwesomeIcon icon={faChevronDown} />
                         </button>
                         <ul id="dropdown-profil" className="hidden py-2">
-                            <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Tentang BBIHPMM                                                                                                                
-                            </li>
-                            <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Sejarah BBIHPMM
-                            </li>
-                            <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Visi & Misi
-                            </li>
-                            <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Tugas Pokok & Fungsi
-                            </li>
-                            <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Motto
-                            </li>
-                            <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Struktur Organisasi
-                            </li>
-                            <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Profil Pejabat
-                            </li>
-                            <li className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
-                                Kebijakan Mutu
-                            </li>
+                            {pathProfil.map((item, index) => (
+                                <li key={index}>
+                                    <Link to={item.path} className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
+                                        {item.name}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </li>                  
                     <li>
