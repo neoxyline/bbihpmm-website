@@ -8,6 +8,7 @@ import MottoPage from './app/profil/motto/index.tsx';
 import UnhandledPath from './components/UnhandledPath.tsx';
 import StrukturOrganisasi from './app/profil/struktur-organisasi/index.tsx';
 import PejabatPage from './app/profil/profil-pejabat/index.tsx';
+import KebijakanMutuPage from './app/profil/kebijakan-mutu/index.tsx';
 
 function App() {
   return (
@@ -56,12 +57,6 @@ function App() {
             <WebpageLayout page={<StrukturOrganisasi />} />
           }
         />
-        <Route
-          path="/profil/profil-pejabat"
-          element={
-              <WebpageLayout page={<PejabatPage />} />
-          }
-          />
       </Routes>
 
     </Router >
