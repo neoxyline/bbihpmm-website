@@ -9,6 +9,7 @@ import UnhandledPath from './components/UnhandledPath.tsx';
 import StrukturOrganisasiPage from './app/profil/struktur-organisasi/index.tsx';
 import KebijakanMutuPage from './app/profil/kebijakan-mutu/index.tsx';
 import LoginPage from './app/authentication/login/index.tsx';
+import RegisterPage from './app/authentication/register/index.tsx';
 
 function App() {
   return (
@@ -67,6 +68,12 @@ function App() {
           path="/authentication/login"
           element={
             <LoginPage />
+          }
+        />
+        <Route
+          path="/authentication/register"
+          element={
+            <RegisterPage />
           }
         />
       </Routes>
