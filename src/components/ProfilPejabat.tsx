@@ -33,7 +33,7 @@ export default function ProfilPejabat() {
 
          </div>
 
-         <div className="bg-slate-50 mx-auto px-7 py-2 w-[95%] flex flex-wrap gap-11 justify-center">
+         <div className="bg-slate-50 mx-auto px-7 py-2 w-[95%] flex flex-wrap gap-7 justify-center">
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
                   <img src={rahmank} alt="" className="max-w-md rounded-t-lg h-48" />
