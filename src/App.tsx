@@ -6,6 +6,7 @@ import SejarahPage from './app/profil/sejarah/index.tsx';
 import VisiMisiPage from './app/profil/visi-misi/index.tsx';
 import MottoPage from './app/profil/motto/index.tsx';
 import UnhandledPath from './components/UnhandledPath.tsx';
+import PejabatPage from './app/profil/profil-pejabat/index.tsx';
 import StrukturOrganisasiPage from './app/profil/struktur-organisasi/index.tsx';
 import KebijakanMutuPage from './app/profil/kebijakan-mutu/index.tsx';
 import LoginPage from './app/authentication/login/index.tsx';
@@ -59,6 +60,12 @@ function App() {
           }
         />
         <Route
+          path="/profil/profil-pejabat"
+          element={
+            <WebpageLayout page={<PejabatPage />} />
+          }
+        />
+        <Route
           path="/profil/kebijakan-mutu"
           element={
             <WebpageLayout page={<KebijakanMutuPage />} />
@@ -77,7 +84,6 @@ function App() {
           }
         />
       </Routes>
-
     </Router >
   )
 }
