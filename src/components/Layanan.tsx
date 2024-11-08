@@ -14,12 +14,15 @@ export default function Layanan() {
           magnam deserunt!
         </p>
         <div className="flex flex-wrap flex-row gap-4 m-5 p-5 justify-center">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card 
+            title="Hello"
+            desc="Kami menyediakakan layanan pengujian yang berakreditasi KAN. Semua
+            yang kami uji dijamin akan dipaksakan memenuhi syarat."
+          />
+          <Card 
+            title="World"
+            desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, repellendus?"
+          />
         </div>
       </div>
     </>
