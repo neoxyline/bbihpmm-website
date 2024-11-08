@@ -224,7 +224,7 @@ export default function Navbar() {
                         </li>
                     </ul>
                     <div className="flex-1 absolute right-0 px-4">
-                        <a href="#" className="font-medium text-blue-600 hover:underline">Login</a>
+                        <a href="/authentication/login" className="font-medium text-blue-600 hover:underline">Login</a>
                     </div>
                 </div>
             </nav>

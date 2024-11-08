@@ -86,7 +86,7 @@ export default function FormLogin() {
                      </div>
                      <button className="bg-blue-600 text-white font-medium p-3 rounded-full mb-2 w-11/12">Login</button>
                      <div className="w-11/12 flex justify-center text-sm">
-                        <span className='text-gray-500'>Belum Punya Akun? <a href="#" className='text-blue-700 font-medium underline'>Daftar</a></span>
+                        <span className='text-gray-500'>Belum Punya Akun? <a href="/authentication/register" className='text-blue-700 font-medium underline'>Daftar</a></span>
                      </div>
                   </div>
                </form>
