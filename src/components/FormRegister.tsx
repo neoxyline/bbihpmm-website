@@ -98,7 +98,7 @@ export default function FormRegister() {
                      </div>
                      <button className="bg-blue-600 text-white font-medium p-3 rounded-full mb-2 w-11/12">Daftar</button>
                      <div className="w-11/12 flex justify-center text-sm">
-                        <span className='text-gray-500'>Sudah Punya Akun? <a href="#" className='text-blue-700 font-medium underline'>Login</a></span>
+                        <span className='text-gray-500'>Sudah Punya Akun? <Link to="/authentication/login" className='text-blue-700 font-medium underline'>Login</Link></span>
                      </div>
                   </div>
                </form>
