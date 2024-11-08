@@ -81,8 +81,11 @@ export default function Sidenav({ isOpen, onClose  }: SidenavProps) {
                         </button>
                         <ul id="dropdown-profil" className="hidden py-2">
                             {pathProfil.map((item, index) => (
-                                <li key={index}>
-                                    <Link to={item.path} className="p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
+                                <li 
+                                    key={index}
+                                    onClick={onClose} 
+                                >
+                                    <Link to={item.path} className="inline-block p-4 font-semibold cursor-pointer text-sm text-gray-900 hover:text-blue-600">
                                         {item.name}
                                     </Link>
                                 </li>
