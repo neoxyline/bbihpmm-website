@@ -1,4 +1,7 @@
 import Logo from '../assets/images/logo.png'
+import { Link, useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function FormLogin() {
    return (
@@ -59,6 +62,12 @@ export default function FormLogin() {
             </div>
             <div className="flex-1 flex flex-col h-full bg-slate-100 rounded-2xl lg:-ml-7 space-y-8 p-8">
                <div className='w-11/12 mx-auto space-y-1'>
+                  <div className='text-blue-600 flex items-center w-fit hover:underline mb-5'>
+                     <Link to="/" className='flex items-center w-fit hover:underline font-medium'>
+                        <FontAwesomeIcon icon={faAngleLeft} className='mr-2' />
+                        Beranda
+                     </Link>
+                  </div>
                   <img src={Logo} alt="" className='w-[150px] mb-4' />
                   <h1 className='text-xl lg:text-2xl font-bold'>Login Akun Official Web BBIHPMM</h1>
                   <h1 className='text-gray-500'>Hi, Selamat Datang <span className='text-blue-600 tracking-wider font-bold'>#InsanOke</span></h1>
