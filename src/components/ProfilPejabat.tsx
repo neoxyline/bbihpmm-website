@@ -1,4 +1,3 @@
-import kabagtu from '../assets/images/pejabat/agusgumiwang.png'
 import rahmank from '../assets/images/pejabat/rk.png'
 import erwin from '../assets/images/pejabat/erwin.png'
 import idham from '../assets/images/pejabat/idham.png'
