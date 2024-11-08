@@ -7,6 +7,7 @@ import VisiMisiPage from './app/profil/visi-misi/index.tsx';
 import MottoPage from './app/profil/motto/index.tsx';
 import UnhandledPath from './components/UnhandledPath.tsx';
 import StrukturOrganisasi from './app/profil/struktur-organisasi/index.tsx';
+import KebijakanMutuPage from './app/profil/kebijakan-mutu/index.tsx';
 
 function App() {
   return (
@@ -53,6 +54,12 @@ function App() {
           path="/profil/struktur-organisasi"
           element={
             <WebpageLayout page={<StrukturOrganisasi />} />
+          }
+        />
+        <Route
+          path="/profil/kebijakan-mutu"
+          element={
+            <WebpageLayout page={<KebijakanMutuPage />} />
           }
         />
       </Routes>
