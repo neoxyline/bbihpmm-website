@@ -6,7 +6,7 @@ import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 export default function FormLogin() {
    return (
       <>
-         <div className="flex w-11/12 md:w-10/12 lg:w-11/12 xl:w-9/12 mx-auto mt-10 rounded-2xl border" style={{ boxShadow: '1px 1px 30px 1px rgba(0, 0, 0, 0.419)' }}>
+         <div className="flex w-11/12 md:w-10/12 lg:w-11/12 xl:w-9/12 mx-auto rounded-2xl border" style={{ boxShadow: '1px 1px 30px 1px rgba(0, 0, 0, 0.419)' }}>
             <div className="w-1/2 hidden lg:flex min-h-full bg-sky-200/80 rounded-2xl overflow-hidden p-8">
                <div className='w-11/12 space-y-5 flex flex-col'>
                   <h1 className='font-bold text-lg'>Single Sign On</h1>
@@ -74,14 +74,14 @@ export default function FormLogin() {
                </div>
                <form action="" className="w-full">
                   <div className="flex-1 flex flex-col h-full items-center space-y-4">
-                     <div className="w-11/12 text-sm space-y-4 mb-4">
+                     <div className="w-11/12 text-sm space-y-4 mb-2">
                         <div className="space-y-1">
                            <p className='font-medium tracking-wide'>Email <span className='text-red-600'>*</span></p>
-                           <input type="text" placeholder='admin@admin.com' className="p-3 w-full rounded-xl bg-slate-200/50 border border-slate-300 focus:outline-blue-200" />
+                           <input type="text" placeholder='admin@admin.com' className="p-2 w-full rounded-xl bg-slate-200/50 border border-slate-300 focus:outline-blue-200" />
                         </div>
                         <div className="space-y-1">
                            <p className='font-medium tracking-wide'>Password <span className='text-red-600'>*</span></p>
-                           <input type="password" placeholder='********' className="p-3 w-full rounded-xl bg-slate-200/50 border border-slate-300 focus:outline-blue-200" />
+                           <input type="password" placeholder='********' className="p-2 w-full rounded-xl bg-slate-200/50 border border-slate-300 focus:outline-blue-200" />
                         </div>
                         <div className='flex justify-between text-sm font-medium'>
                            <div className='flex space-x-1 items-center'>
