@@ -1,4 +1,13 @@
 import kabagtu from '../assets/images/pejabat/agusgumiwang.png'
+import rahmank from '../assets/images/pejabat/rk.png'
+import erwin from '../assets/images/pejabat/erwin.png'
+import idham from '../assets/images/pejabat/idham.png'
+import hari from '../assets/images/pejabat/hari.png'
+import mamang from '../assets/images/pejabat/mamang.png'
+import shinta from '../assets/images/pejabat/shinta.png'
+import ainun from '../assets/images/pejabat/ainun.png'
+import yulis from '../assets/images/pejabat/yulis.png'
+import asma from '../assets/images/pejabat/asma.png'
 
 export default function ProfilPejabat() {
    return (
@@ -11,7 +20,7 @@ export default function ProfilPejabat() {
                   <h1 className="text-center text-black font-light">Kepala BBSPJIHPMM</h1>
                </div>
                <div className="h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={shinta} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                {/* Hover effect */}
                <div className="absolute inset-0 bg-slate-50 bg-opacity-95 flex flex-col justify-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out p-9">
@@ -24,10 +33,10 @@ export default function ProfilPejabat() {
 
          </div>
 
-         <div className="bg-slate-50 mx-auto px-7 py-2 w-[95%] flex flex-wrap gap-7 justify-center">
+         <div className="bg-slate-50 mx-auto px-7 py-2 w-[95%] flex flex-wrap gap-11 justify-center">
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={rahmank} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                <div className="shadow-md w-auto rounded-b-lg px-1 py-auto content-center">
                   <h1 className="text-center text-black font-bold">Abdul Rahman, S.Kom</h1>
@@ -44,7 +53,7 @@ export default function ProfilPejabat() {
 
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={ainun} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                <div className="shadow-md w-auto rounded-b-lg px-1 py-auto content-center">
                   <h1 className="text-center text-black font-bold">Ainun Berliani, S.Sos., M.I.Kom</h1>
@@ -61,7 +70,7 @@ export default function ProfilPejabat() {
 
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={idham} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                <div className="shadow-md w-auto rounded-b-lg px-1 py-auto content-center">
                   <h1 className="text-center text-black font-bold">Drs. Muh. Idham, M.M</h1>
@@ -78,7 +87,7 @@ export default function ProfilPejabat() {
 
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={erwin} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                <div className="shadow-md w-auto rounded-b-lg px-1 py-auto content-center">
                   <h1 className="text-center text-black font-bold">Erwin Adinata, M.Si</h1>
@@ -95,7 +104,7 @@ export default function ProfilPejabat() {
 
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={mamang} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                <div className="shadow-md w-auto rounded-b-lg px-1 py-auto content-center">
                   <h1 className="text-center text-black font-bold">Mamang,S.TP., M.Si</h1>
@@ -112,7 +121,7 @@ export default function ProfilPejabat() {
 
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={hari} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                <div className="shadow-md w-auto rounded-b-lg px-1 py-auto content-center">
                   <h1 className="text-center text-black font-bold">Hari Purwanto, M.Si</h1>
@@ -129,7 +138,7 @@ export default function ProfilPejabat() {
 
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={asma} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                <div className="shadow-md w-auto rounded-b-lg px-1 py-auto content-center">
                   <h1 className="text-center text-black font-bold">Dr. Asma Assa, M.Si</h1>
@@ -146,7 +155,7 @@ export default function ProfilPejabat() {
 
             <div className="w-96 group relative overflow-hidden rounded-lg transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-lg">
                <div className="w-auto h-48 overflow-hidden flex justify-center">
-                  <img src={kabagtu} alt="" className="max-w-md rounded-t-lg h-48" />
+                  <img src={yulis} alt="" className="max-w-md rounded-t-lg h-48" />
                </div>
                <div className="shadow-md w-auto rounded-b-lg px-1 py-auto content-center">
                   <h1 className="text-center text-black font-bold">Yulismulianti, M.Si</h1>
