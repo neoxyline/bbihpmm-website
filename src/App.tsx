@@ -58,21 +58,15 @@ function App() {
           }
         />
         <Route
+          path="/profil/kebijakan-mutu"
+          element={
+            <WebpageLayout page={<KebijakanMutuPage />} />
+          }
+        />
+        <Route
           path="/authentication/login"
           element={
             <LoginPage />
-          }
-        />
-        <Route
-          path="/profil/kebijakan-mutu"
-          element={
-            <WebpageLayout page={<KebijakanMutuPage />} />
-          }
-        />
-        <Route
-          path="/profil/kebijakan-mutu"
-          element={
-            <WebpageLayout page={<KebijakanMutuPage />} />
           }
         />
       </Routes>
